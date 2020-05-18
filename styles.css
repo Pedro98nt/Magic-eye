@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: #161118;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin: 10%;
+  }
+  
+  .ball {
+    position: absolute;
+    width: 50%;
+    padding-bottom: 50%;
+    background: #462255;
+    border-radius: 50%;
+    background: radial-gradient(circle at 65% 25%, #f7eded 1px, #462255 3%, #161118 60%);
+  }
+  
+  #illuminate {
+    position: absolute;
+    width: 70%;
+    padding-bottom: 70%;
+    z-index: -20;
+    background: #462255;
+    border-radius: 50%;
+    background: radial-gradient(50% 50% at 50% 50%, #462255 47%, #161118 100%) no-repeat 50% 50%/100% 100%;
+    visibility: hidden;
+  }
+  
+  .ball div:nth-child(1) {
+    position: absolute;
+    bottom: -10%;
+    left: 5%;
+    width: 90%;
+    height: 40%;
+    -webkit-clip-path: polygon(22% 57%, 78% 57%, 100% 100%, 0% 100%);
+    background-color: #ffc720;
+    z-index: -10;
+    background: linear-gradient(103deg, #161118 50%, #ffd129 59%, #ffd129 59%, #ffea89 84%, #ffffff 100%);
+  }
+  
+  .ball div:nth-child(2) {
+    position: absolute;
+    bottom: -17%;
+    left: 5%;
+    width: 89.82%;
+    height: 8%;
+    border-radius: 25% 25% 100% 100%;
+    background-color: #ffc720;
+    background: linear-gradient(99deg, #161118 44.5%, #ffd129 54%, #ffea89 84%, #ffffff 100%);
+    z-index: -11;
+  }
+  
+  .eye {
+    visibility: hidden;
+    position: relative;
+    width: 20%;
+    padding-bottom: 20%;
+    background: #f7eded;
+    filter: drop-shadow(1px 1px 20px #f7eded);
+    border-radius: 50% 0%;
+    transform: rotate(45deg);
+    pointer-events: none;
+  }
+  
+  .eye div:nth-child(1) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 60%;
+    border-radius: 50%;
+    background-color: #93e1d8;
+  }
+  
+  .eye div:nth-child(2) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35%;
+    height: 35%;
+    border-radius: 50%;
+    background-color: #161118;
+    background: radial-gradient(circle at 52% 22%, #f7eded 1px, #161118 25%);
+  }
+  
+  .eye div:nth-child(3) {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
+    background-color: white;
+  }
+  
+  .star {
+    position: absolute;
+    display: none;
+    width: 5%;
+    height: 5%;
+    background: #ffc720;
+    -webkit-clip-path: polygon(50% 0%, 53% 40%, 98% 35%, 56% 51%, 79% 91%, 48% 54%, 21% 91%, 39% 51%, 0 36%, 44% 41%);
+  }
+  
+  #iris {
+    animation: color-change-3x 1s linear infinite alternate both;
+  }
+  
+  @-webkit-keyframes color-change-3x {
+    0% {
+      background: #19dcea;
+    }
+    50% {
+      background: #b22cff;
+    }
+    100% {
+      background: #ea2222;
+    }
+  }
+  @keyframes color-change-3x {
+    0% {
+      background: #19dcea;
+    }
+    50% {
+      background: #b22cff;
+    }
+    100% {
+      background: #ea2222;
+    }
+  }
+  .blink {
+    animation: blink-2 1s infinite both;
+  }
+  
+  @-webkit-keyframes blink-2 {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.2;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes blink-2 {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.2;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes color-change-2x {
+    0% {
+      background: #5a3284;
+    }
+    100% {
+      background: #342247;
+    }
+  }
+  @keyframes color-change-2x {
+    0% {
+      background: #5a3284;
+    }
+    100% {
+      background: #342247;
+    }
+  }
